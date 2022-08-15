@@ -2,8 +2,8 @@ type ContainerProps = React.PropsWithChildren<{
   type?: "basic" | "normal" | "golden" | "golden-2";
 }>;
 
-const Container: React.FC<ContainerProps> = ({ children, type }) => {
-  const isNormalType = type === "normal" || type === undefined;
+const Container: React.FC<ContainerProps> = ({ children, type = "normal" }) => {
+  const isNormalType = type === "normal";
   const isBasicType = type === "basic";
   const framedClassSuffix = isNormalType
     ? ""
