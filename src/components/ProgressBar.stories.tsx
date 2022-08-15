@@ -7,12 +7,12 @@ export default {
   parameters: {
     layout: "fullscreen",
   },
-  //   argTypes: {
-  //     type: {
-  //       options: ["normal", "basic", "golden", "golden-2"],
-  //       control: { type: "radio" },
-  //     },
-  //   },
+    argTypes: {
+      color: {
+        options: ["red", "blue", "green"],
+        control: { type: "radio" },
+      },
+    },
 } as ComponentMeta<typeof ProgressBar>;
 
 const Template: ComponentStory<typeof ProgressBar> = (args) => (
