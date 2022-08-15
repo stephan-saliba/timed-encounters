@@ -12,6 +12,9 @@ export default {
         options: ["red", "blue", "green"],
         control: { type: "radio" },
       },
+      progress: {
+        control: { type: "range", min: 0, max: 1, step: 0.01 },
+      }
     },
 } as ComponentMeta<typeof ProgressBar>;
 
