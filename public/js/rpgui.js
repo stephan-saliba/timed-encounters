@@ -16,7 +16,7 @@ RPGUI.author = "Ronen Ness";
 
 // if true, will init rpgui as soon as page loads
 // if you set to false you need to call RPGUI.init(); yourself.
-RPGUI.init_on_load = true;
+RPGUI.init_on_load = false;
 window.addEventListener("load", function()
 {
 	if (RPGUI.init_on_load) {RPGUI.init();}
