@@ -1,7 +1,7 @@
-type ProgressBarProps = React.PropsWithChildren<{
+type ProgressBarProps = {
   color?: "red" | "blue" | "green";
   progress?: number;
-}>;
+};
 
 const ProgressBar: React.FC<ProgressBarProps> = ({
   color = "green",
